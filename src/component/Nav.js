@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 
-function Navigation(){
+function Nav(){
     return(
         <nav className="nav-container">
         <ul>
@@ -15,4 +15,4 @@ function Navigation(){
     );
 }
 
-export default Navigation;
+export default Nav;
