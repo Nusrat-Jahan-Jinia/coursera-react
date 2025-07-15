@@ -1,20 +1,18 @@
-import React from 'react'
-import logo from "../logo.jpg"
+import {Link} from 'react-router-dom';
 
-function Nav() {
-  return (
-      <div className="container">
-          <img src={logo} alt='logo' className='App-logo' />
-          <ul className='inline'>
-              <li href="/">Home</li>
-              <li href="/about">ABOUT</li>
-              <li href="/menu">MENU</li>
-              <li href="/reservations">RESERVATIONS</li>
-              <li href="/onlineorders">ONLINE ORDERS</li>
-              <li href="/login">LOGIN</li>
-          </ul>
-      </div>
-  )
+function Navigation(){
+    return(
+        <nav className="nav-container">
+        <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/menu">Menu</Link></li>
+            <li><Link to="/Booking">Reservations</Link></li>
+            <li><Link to="/order-online">Order Online</Link></li>
+            <li><Link to="/login">Login</Link></li>
+        </ul>
+        </nav>
+    );
 }
 
-export default Nav
+export default Navigation;
